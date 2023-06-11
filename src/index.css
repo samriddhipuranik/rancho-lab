@@ -1,0 +1,93 @@
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.robot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.robot-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.robot-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  flex: 1;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.grid-cell.robot {
+  background-color: blue;
+}
+
+.grid-cell:hover {
+  background-color: #ddd;
+}
+
+.logic-panel {
+  margin-top: 20px;
+}
+
+.arrow-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.arrow-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.arrow-button:hover {
+  background-color: #ddd;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.play-button,
+.reset-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.play-button:hover,
+.reset-button:hover {
+  background-color: #ddd;
+}
